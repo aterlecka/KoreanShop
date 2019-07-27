@@ -1,0 +1,292 @@
+@color: #717171;
+@color1: #a8a8a8;
+@fontColor: #ffffff;
+@font: "Unica One";
+@color2: #000000;
+
+body{
+background-color: @color1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header{
+  //width: 2050px;
+  height: 230px;
+  background-color:@color;
+  clear: both;
+
+}
+
+.welcome{
+
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.welcome > ul{
+
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style:none;
+}
+
+.one , .two, .three, .four{
+  margin: 5px 40px;
+
+}
+
+
+
+
+
+
+.logo >img{
+  max-width: 60%;
+  margin-top: 70px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .welcome .one .two .three  .four p{
+  margin-top: 10px;
+
+
+}
+
+
+//////////////nav///////////////////
+nav {
+  text-align: center;
+  margin-top: 1px;
+  position: relative;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  background-color: @color;
+
+
+
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  position: relative;
+
+
+}
+nav li>a {
+  transition: 0.2s;
+
+
+
+}
+
+nav li:hover>a {
+  color: black;
+  background-color: @color;
+  transition: 0.2s;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+nav:after {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: -1;
+  left: -100%;
+
+  bottom: 0;
+  height: 2px;
+  width: 205%;
+}
+
+nav>ul>li>a {
+
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 20px;
+  color:@fontColor;
+  font-weight: bold;
+  font-family: @font;
+}
+
+
+nav>ul>li:hover>ul {
+  display: block;
+}
+
+
+nav ul ul {
+  display: none;
+}
+
+
+
+nav>ul>li {
+  display: inline-block;
+}
+
+
+nav>ul>li>ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  background: @color1;
+  box-shadow: 0 15px 30px @color;
+  text-align: center;
+  padding: 0 30px 30px 30px;
+}
+
+
+nav>ul>li>ul a {
+  color: @fontColor;
+  font-size: 20px;
+  font-family: @font;
+  font-weight: bold;
+}
+
+
+nav>ul>li>ul>li {
+  display: inline-block;
+  width: 13%;
+  vertical-align: top;
+
+}
+nav>ul>li>ul>li ul {
+  display: block;
+  position: static;
+  margin-top: 10px;
+}
+
+
+
+nav>ul>li>ul>li ul li {
+  padding-right: 30px;
+}
+nav>ul>li>ul>li ul li a {
+  display: block;
+  width: 100%;
+  text-transform: none;
+  padding: 7px 15px;
+
+}
+
+///////////////////////////////////
+.search{
+  height: 60px;
+  background-color:@color;
+  text-align: center;
+
+}
+
+input {
+
+  text-align:center;
+  min-width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  color: @color;
+
+}
+button{
+  height: 50px;
+  width: 0px;
+  margin-left: -30px;
+  border: none;
+  cursor: pointer;
+
+
+
+}
+
+
+button:hover {
+  opacity: 0.8;
+  background: @color1
+}
+
+
+
+///////////////////////////////////////////////////////
+
+#myUL {
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li>ul>li>#myUL >li >a {
+  padding: 14px;
+  font-family: @font;
+  font-size: 22px;
+  color: white;
+  display:block;
+}
+
+nav>ul>li>ul>li>#myUL li a:hover {
+  background-color:@color;
+
+
+}
+div.nowosci img{
+  height:250px;
+
+
+
+
+}
+
+p.sale {
+color:red;
+  font-size:40px;
+  font-weight: bold;
+  text-align:center;
+  font-family: @font;
+
+}
+
+
+
+
+.price{
+  font-family: @font;
+  text-align: left;
+  color:blue;
+  font-weight:bold;
+  font: 50px;
+
+}
+
+
+.describe{
+  font-size:15px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
