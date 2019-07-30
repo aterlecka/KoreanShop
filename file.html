@@ -22,6 +22,7 @@
 
     <link rel="stylesheet/less" type="text/css" href="style.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="tilt.jquery.js"></script>
 
 
 
@@ -30,15 +31,33 @@
 
 <header class="header">
 
-    <ul class="welcome">
-        <li class="one"> <span> MY CART <i class="fas fa-shopping-cart"></i> </span> </li>
+<!--    <ul class="welcome">-->
+<!--        <li class="one"> <span> MY CART <i class="fas fa-shopping-cart"></i> </span> </li>-->
 
-        <li class="two"> <span> mail:koreanshop@gmail.com <i class="fas fa-bars"> </i> </span></li>
+<!--        <li class="two"> <span> mail:koreanshop@gmail.com <i class="fas fa-bars"> </i> </span></li>-->
 
-        <li class="three"> <p>call: +48 507 649 356</p> </li>
+<!--        <li class="three"> <p>call: +48 507 649 356</p> </li>-->
 
-        <li class="four"> <p> SIGN IN/SIGN UP!</p> </li>
-    </ul>
+<!--        <li class="four"> <p> SIGN IN/SIGN UP!</p> </li>-->
+<!--    </ul>-->
+
+
+
+
+    <div class="user">
+
+        <a class="sub" href="#"> SUBSCRIBE </a>
+        <a href ="/logowanie" rel="nofollow"> SIGN IN </a>
+        <span>/</span>
+        <a href="/rejestracja" rel="nofollow"> SIGN UP</a>
+
+
+
+    </div>
+
+
+
+
 
     <div class="logo">
         <img src="https://koreacosmetics.eu/logo.png" alt="korean">
@@ -215,7 +234,79 @@
 </nav>
 
 
+<div class="info">
+    <div class="item">
+        <img src="img/del.png" height="111" width="400" height="80" />
+    </div>
 
+    <div class="item">
+        <img src="img/gua1.png" height="100" width="650"/>
+    </div>
+
+
+    <div class="item">
+
+        <img src="img/helps.png" height="80" width="400"/>
+    </div>
+
+
+</div>
+
+<div class="banner">
+    <div>
+        <img src="img/banner.jpg" value="banner" alt="banner" />
+    </div>
+
+    <div>
+        <img class="logo2" src="img/banner.jpg" value="logo2" alt="logo2"/>
+
+
+    </div>
+
+
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.banner').slick({
+
+            dots:false,
+            arrows:true,
+            autoplay:true,
+            autoplaySpeed: 300
+
+        });
+    });
+    $('.banner').slick({
+        dots: false,
+        autoplay:true,
+        responsive:[{
+            breakpoint: 969,
+            settings: {
+
+                dots: true,
+                arrows:false,
+                autoplay:true,
+            }
+        }
+
+        ]
+    });
+</script>
+
+
+
+
+
+
+
+
+<div class="about">
+
+
+
+</div>
 
 
 
@@ -230,35 +321,45 @@
     <br>
     <br>
     <p class="sale">SALE</p>
-<br>s
+<br>
     <div class="nowosci">
-        <div> <img class="mask"  src="https://cdn.shopify.com/s/files/1/0133/5872/7226/products/Soothing_300x300.jpg?v=1541576880"/>
-            <p class="describe">MASK DR JART++</p>
-            <p class="price">15$</p></div>
+        <div> <img class="mask"  src="img/egggggg.png"/>
+            <p class="describe">BALM WITH EGGS</p>
+            <p class="price"> <s>15$</s> </p></div>
 
-        <div> <img class="fluid"  src="https://drogeriacosmo.pl/wp-content/uploads/2018/04/s-l300-1.jpg"/>
-            <p class="describe">MISSHA</p>
-            <p class="price">13$</p>
+        <div> <img class="fluid"  src="img/egg.png"/>
+            <p class="describe">BODY MUSS WITH EGGS</p>
+            <span> <p class="price"><s>13$</s> </p> <p class="price2"> 8$ </p>    </span>
         </div>
 
-        <div><img class="laneige" src="http://www.sephora.pl/media/catalog_ProductCatalog/m21622319_P3662004_princ_medium.jpg"/>
+        <div><img class="laneige" src="img/3.png"/>
             <p class="describe">MASK FOR NIGHT LANEIGE</p>
-            <p class="price">21$ </p>
+            <p class="price"><s> 21$</s> </p>
         </div>
 
-        <div><img  class="aloe" src="https://static.aptekagemini.pl/media/products/f_/b_/8_/fb87c91a11fe61937c423d3c635907c3/images/thumbnail/large_9052006_9.jpg"/>
-            <p class="describe">ALOE GELL HOLIKA HOLIKA</p>
-            <p class="price">18$ </p>
+        <div><img  class="aloe" src="img/5.png"/>
+            <p class="describe">COOL EYES STICK</p>
+            <p class="price"><s>18$</s> </p>
         </div>
 
-        <div><img class="serum" src="https://static.wizaz.pl/media/cache/300x300/kwc/product/601/053/53601/479501.jpeg"/>
+        <div><img class="serum" src="img/pobrane.png"/>
             <p class="describe">KIEHL'S SERUM</p>
-            <p class="price">35$</p>
+            <p class="price"><s>35$</s></p>
         </div>
+
+        <div><img class="jart" src="img/2.png">
+            <p class="describe">DR.JART+</p>
+            <p class="price"><s>33$</s></p></div>
 
 
     </div>
 </section>
+
+
+
+
+
+
 
 
 <script>
@@ -294,6 +395,8 @@
 
         ]
     });
+
+
 
 </script>
 
