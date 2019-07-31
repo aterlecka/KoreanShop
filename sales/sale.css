@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+}
+.products .products2 {
+  clear: both;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.products2 img {
+  width: 270px;
+  height: 260px;
+}
+.salesProduct {
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Unica One";
+}
+/*# sourceMappingURL=sale.css.map */
