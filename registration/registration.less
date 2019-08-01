@@ -35,7 +35,6 @@ body{
 
 }
 
-
 h1 {
   text-align: center;
   font-size: 44px;
@@ -43,48 +42,50 @@ h1 {
   font-weight: lighter;
 }
 
-.signin{
+
+
+
+.infoSignUp{
   text-align: center;
-  margin-top: 20px;
-
+  margin-top: 10px;
 }
 
-.adress{
-  border-radius: 0px;
-
+.name, .surname, .adress, .password{
+  border-radius: 0;
+  font-size: 19px;
 }
 
-.password{
-  border-radius: 0px;
+.infoSignUp input {
+  //padding:  10px 20px;
+  border-radius: 0;
 }
 
-.login{
-  background-color: @color6;
-  color: white;
-  font-weight: bold;
-  box-shadow: none;
-  outline: none;
-  border-color: @color6;
-  height: 55px;
-  padding: 15px 85px;
+
+.requestAbout{
   text-align: center;
+  font-family: cursive;
+}
+
+.requestAbout a {
+  font-size: 28px;
+  color: @color6;
   text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-}
-
-.login:hover{
-  clear: both;
-  background-color:@color7;
-  border-color: @color7;
   font-weight: bold;
-  box-shadow: none;
+  font-family: cursive;
+
+
 }
 
 
-.button {
-  background-color: @color5;
+
+.requestAbout a:first-child {
+  font-size: 28px;
+  color: @color2;
+  text-decoration: none;
+  font-weight:bold;
+}
+.accountCreate2{
+  background-color: @color6;
   border: none;
   color: white;
   padding: 15px 85px;
@@ -95,33 +96,22 @@ h1 {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
+  font-weight: bold;
+  font-family: Arial;
 }
 
-.button:hover{
+
+
+.accountCreate2:hover{
   clear: both;
-  background-color:@color8;
-  border-color: @color8;
+  background-color:@color7;
+  border-color: @color7;
   font-weight: bold;
   box-shadow: none;
 }
 
 
-.requestAboutAccount{
-  text-align: center;
-  font-family: cursive;
-}
 
-.requestAboutAccount a {
-  font-size: 28px;
-  color: @color6;
-  text-decoration: none;
-
-
-}
-
-.requestAboutAccount a:first-child {
-  font-size: 28px;
-  color: @color2;
-  text-decoration: none;
-  font-weight:bold;
+form p label {
+  display: block;
 }

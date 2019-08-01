@@ -38,7 +38,8 @@ h1 {
   background-color: #e24373;
   color: white;
   font-weight: bold;
-  cursor: pointer;
+  box-shadow: none;
+  outline: none;
   border-color: #e24373;
   height: 55px;
   padding: 15px 85px;
@@ -47,6 +48,13 @@ h1 {
   display: inline-block;
   font-size: 25px;
   margin: 4px 2px;
+}
+.login:hover {
+  clear: both;
+  background-color: #a8364b;
+  border-color: #a8364b;
+  font-weight: bold;
+  box-shadow: none;
 }
 .button {
   background-color: #256bff;
@@ -61,8 +69,16 @@ h1 {
   cursor: pointer;
   border-radius: 10px;
 }
+.button:hover {
+  clear: both;
+  background-color: #2157b6;
+  border-color: #2157b6;
+  font-weight: bold;
+  box-shadow: none;
+}
 .requestAboutAccount {
   text-align: center;
+  font-family: cursive;
 }
 .requestAboutAccount a {
   font-size: 28px;

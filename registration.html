@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Shop with korean cosmetics</title>
-    <link rel="Stylesheet" href="style.css">
+    <link rel="Stylesheet" href="registration/registration.css">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="sign/sign.css"/>
-    <link rel="stylesheet/less" type="text/css" href="sign/sign.css"/>
+    <link rel="stylesheet" type="text/css" href="registration/registration.css"/>
+    <link rel="stylesheet/less" type="text/css" href="registration/registration.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet/less" type="text/css" href="sign/sign.less" />
+    <link rel="stylesheet/less" type="text/css" href="registration/registration.less" />
 
     <script src="//cdnjs.cloudflare.com/ajax/l4ibs/less.js/3.9.0/less.min.js" ></script>
     <script src="actives.js" data-poll="1000" data-relative-urls="false"></script>
@@ -59,7 +59,6 @@
 
 
     <div class="logo">
-
         <img src="https://koreacosmetics.eu/logo.png" alt="korean">
     </div>
 
@@ -253,36 +252,64 @@
 </div>
 
 
-<h1> Do you have an account on the site?
-    <b>Sign in:<b>  </h1>
+<h1> Sign up here:</h1>
 
-
-<div class="signin">
-
+<div class="infoSignUp">
 <form>
-    <input type="text" class="adress"  placeholder="E-MAIL ADRESS" />
+    <input type="text" class="name"  placeholder="NAME*" />
 </form>
 <br>
+<br>
+<form>
+    <input type="text" class="surname"  placeholder="SURNAME*"/>
+</form>
+<br>
+<br>
+<form>
+    <input type="text" class="adress"  placeholder="E-MAIL ADRESS*" />
+</form>
+<br>
+<br>
+<form>
+    <input type="text" class="adress"  placeholder="REPEAT THE EMAIL ADDRESS*"/>
+</form>
+<br>
+<br>
+<form>
+    <input type="password" class="password"  placeholder="PASSWORD*" />
+</form>
+<br>
+<br>
+<form>
+    <input type="password" class="password"   placeholder="REPEAT THE PASSWORD* "/>
+</form>
+<br>
+
     <br>
-<form>
-<input type="password" class="password"  placeholder="PASSWORD "/>
-</form>
+    <div>
+    <form action="http://webkod.pl/php/submit-result.php">
+        <p>
+            <label>
+                <input type="checkbox" name="regulamin" value=" ">
+            </label>
+        </p>
 
-<br>
-    <form class="log">
-    <input class="login" type="submit" value="SIGN IN">
+        <p style="font-family:cursive"> accepts regulations </p>
+    </div>
     </form>
+
+
+
 <br>
-
-    <a href="https://www.facebook.com/" class="button">FACEBOOK</a>
-
-</div>
 <br>
+    <a href="/" class="accountCreate2">CREATE AN ACCOUNT </a>
+    <br>
 
-<div class="requestAboutAccount">
-<a href ="#"> You dont have an account yet?</a>
-<span> </span>
-<a href="registration.html" rel="nofollow"> SIGN UP!!</a>
+    <div class="requestAbout">
+        <a href ="#"> Maybe you already have an account?</a>
+        <span> </span>
+        <a href="sign.html" rel="nofollow"> SIGN IN!!</a>
+    </div>
 </div>
 
 
