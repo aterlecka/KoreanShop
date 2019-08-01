@@ -6,11 +6,11 @@
     <title>Shop with korean cosmetics</title>
     <link rel="Stylesheet" href="style.css">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="stylesheet/less" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="sign/sign.css"/>
+    <link rel="stylesheet/less" type="text/css" href="sign/sign.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <link rel="stylesheet/less" type="text/css" href="sign/sign.less" />
 
     <script src="//cdnjs.cloudflare.com/ajax/l4ibs/less.js/3.9.0/less.min.js" ></script>
     <script src="actives.js" data-poll="1000" data-relative-urls="false"></script>
@@ -32,25 +32,24 @@
 
 <header class="header">
 
-<!--    <ul class="welcome">-->
-<!--        <li class="one"> <span> MY CART <i class="fas fa-shopping-cart"></i> </span> </li>-->
+    <!--    <ul class="welcome">-->
+    <!--        <li class="one"> <span> MY CART <i class="fas fa-shopping-cart"></i> </span> </li>-->
 
-<!--        <li class="two"> <span> mail:koreanshop@gmail.com <i class="fas fa-bars"> </i> </span></li>-->
+    <!--        <li class="two"> <span> mail:koreanshop@gmail.com <i class="fas fa-bars"> </i> </span></li>-->
 
-<!--        <li class="three"> <p>call: +48 507 649 356</p> </li>-->
+    <!--        <li class="three"> <p>call: +48 507 649 356</p> </li>-->
 
-<!--        <li class="four"> <p> SIGN IN/SIGN UP!</p> </li>-->
-<!--    </ul>-->
-
-
+    <!--        <li class="four"> <p> SIGN IN/SIGN UP!</p> </li>-->
+    <!--    </ul>-->
 
 
     <div class="user">
 
         <a class="sub" href="#"> SUBSCRIBE </a>
-        <a href ="sign.html" target="_self" rel="nofollow"> SIGN IN </a>
+        <a href ="/logowanie" rel="nofollow"> SIGN IN </a>
         <span>/</span>
         <a href="/rejestracja" rel="nofollow"> SIGN UP</a>
+
 
 
     </div>
@@ -252,153 +251,39 @@
 
 </div>
 
-<div class="banner">
-    <div>
-        <img src="img/banner.jpg" value="banner" alt="banner" />
-    </div>
 
-    <div>
-        <img class="logo2" src="img/banner.jpg" value="logo2" alt="logo2"/>
+<h1> Do you have an account on the site?
+    <b>Sign in:<b>  </h1>
 
 
-    </div>
+<div class="signin">
 
-
-
-</div>
-
-<script>
-    $(document).ready(function(){
-        $('.banner').slick({
-
-            dots:false,
-            arrows:true,
-            autoplay:true,
-            autoplaySpeed: 300
-
-        });
-    });
-    $('.banner').slick({
-        dots: false,
-        autoplay:true,
-        responsive:[{
-            breakpoint: 969,
-            settings: {
-
-                dots: true,
-                arrows:false,
-                autoplay:true,
-            }
-        }
-
-        ]
-    });
-</script>
-
-
-
-
-
-
-
-
-<div class="about">
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<section class="slider">
-    <br>
-    <br>
-    <p class="sale">SALE</p>
+<form>
+    <input type="text" class="adress"  placeholder="E-MAIL ADRESS" />
+</form>
 <br>
-    <div class="nowosci">
-        <div> <img class="mask"  src="img/egggggg.png"/>
-            <p class="describe">BALM WITH EGGS</p>
-            <p class="price"> <s>15$</s> </p></div>
+    <br>
+<form>
+<input type="text" class="password"  placeholder="PASSWORD "/>
+</form>
 
-        <div> <img class="fluid"  src="img/egg.png"/>
-            <p class="describe">BODY MUSS WITH EGGS</p>
-            <span> <p class="price"><s>13$</s> </p> <p class="price2"> 8$ </p>    </span>
-        </div>
+<br>
+    <form class="log">
+    <input class="login" type="submit" value="SIGN IN">
+    </form>
+<br>
 
-        <div><img class="laneige" src="img/3.png"/>
-            <p class="describe">MASK FOR NIGHT LANEIGE</p>
-            <p class="price"><s> 21$</s> </p>
-        </div>
+    <a href="https://www.facebook.com/" class="button">FACEBOOK</a>
 
-        <div><img  class="aloe" src="img/5.png"/>
-            <p class="describe">COOL EYES STICK</p>
-            <p class="price"><s>18$</s> </p>
-        </div>
+</div>
+<br>
 
-        <div><img class="serum" src="img/pobrane.png"/>
-            <p class="describe">KIEHL'S SERUM</p>
-            <p class="price"><s>35$</s></p>
-        </div>
+<div class="requestAboutAccount">
+<a href ="#"> You dont have an account yet?</a>
+<span> </span>
+<a href="/rejestracion" rel="nofollow"> SIGN UP!!</a>
+</div>
 
-        <div><img class="jart" src="img/2.png">
-            <p class="describe">DR.JART+</p>
-            <p class="price"><s>33$</s></p></div>
-
-
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<script>
-    $('.nowosci').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay:true,
-        autoplaySpeed: 1000,
-        responsive: [
-            {
-                breakpoint: 1170,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-
-        ]
-    });
-
-
-
-</script>
 
 
 
