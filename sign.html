@@ -116,7 +116,7 @@
                 <li>
                     <ul>
                         <li>
-                            <a href="sales.html" target="_self">SEE ALL PRODUCTS</a>
+                            <a href="sales/sales.html" target="_self">SEE ALL PRODUCTS</a>
                         </li>
 
                     </ul>
@@ -253,31 +253,37 @@
 </div>
 
 
-<h1> Do you have an account on the site?
-    <b>Sign in:<b>  </h1>
+<h1> Do you have an account on the site? <b>Sign in:<b> </h1>
 
 
 <div class="signin">
 
-<form>
-    <input type="text" class="adress"  placeholder="E-MAIL ADRESS" />
-</form>
-<br>
-    <br>
-<form>
-<input type="password" class="password"  placeholder="PASSWORD "/>
-</form>
+    <form name="login" onsubmit="return logowanie()">
 
-<br>
-    <form class="log">
-    <input class="login" type="submit" value="SIGN IN">
+        <input id="userName" type="text" name="nazwa" placeholder="NAME">
+<!--        class="adress"-->
+        <br>
+        <br>
+        <input id="userPw" type="password" name="haslo" placeholder="PASSWORD">
+<!--        class="password"-->
+        <br>
+        <br>
+        <input  id="login_btn" type="submit"  value="Login" onClick="check()">
+<!--        class="login"-->
+
+        <br>
+        <a href="https://www.facebook.com/" class="button">FACEBOOK</a>
     </form>
 <br>
 
-    <a href="https://www.facebook.com/" class="button">FACEBOOK</a>
 
 </div>
 <br>
+
+<br>
+
+<br>
+
 
 <div class="requestAboutAccount">
 <a href ="#"> You dont have an account yet?</a>
@@ -311,10 +317,10 @@
             </ul>
 
             <ul class="firstThree">
-                <div class="second"> MY ACCOUNT  </div>
-                <li><a href="registration.html"target="_self" rel="nofollow" >Registration</a></li>
-                <li> <a href="sign.html"target="_self" rel="nofollow" >Login </li>
-                <li><a href="#" >Contact </li>
+                <div class="second"> MY ACCOUNT</div>
+                <li><a href="registration.html" target="_self" rel="nofollow">Registration</a></li>
+                <li><a href="sign.html" target="_self" rel="nofollow">Login</li>
+                <li><a href="#">Contact</li>
 
             </ul>
         </div>

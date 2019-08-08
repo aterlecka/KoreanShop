@@ -115,7 +115,7 @@
                 <li>
                     <ul>
                         <li>
-                            <a href="sales.html" target="_self">SEE ALL PRODUCTS</a>
+                            <a href="sales/sales.html" target="_self">SEE ALL PRODUCTS</a>
                         </li>
 
                     </ul>
@@ -254,56 +254,103 @@
 
 <h1> Sign up here:</h1>
 
-<div class="infoSignUp">
-<form>
-    <input type="text" class="name"  placeholder="NAME*" />
-</form>
-<br>
-<br>
-<form>
-    <input type="text" class="surname"  placeholder="SURNAME*"/>
-</form>
-<br>
-<br>
-<form>
-    <input type="text" class="adress"  placeholder="E-MAIL ADRESS*" />
-</form>
-<br>
-<br>
-<form>
-    <input type="text" class="adress"  placeholder="REPEAT THE EMAIL ADDRESS*"/>
-</form>
-<br>
-<br>
-<form>
-    <input type="password" class="password"  placeholder="PASSWORD*" />
-</form>
-<br>
-<br>
-<form>
-    <input type="password" class="password"   placeholder="REPEAT THE PASSWORD* "/>
-</form>
-<br>
 
+
+
+
+
+<!--<div class="infoSignUp">-->
+<!--<form name="form1" onsubmit="return weryfikacja()">-->
+<!--    <input type="text" class="name" name="name" placeholder="NAME*" />-->
+<!--</form>-->
+<!--<br>-->
+<!--<br>-->
+<!--<form class="form1">-->
+<!--    <input type="number" class="surname" name="age" placeholder="AGE*"/>-->
+<!--</form>-->
+<!--<br>-->
+<!--<br>-->
+<!--<form class="form1">-->
+<!--    <input type="text" class="adress"   name="name" placeholder="E-MAIL ADRESS*" />-->
+<!--</form>-->
+<!--<br>-->
+<!--<br>-->
+<!--<form class="form1">-->
+<!--    <input type="text" class="adress" name="name" placeholder="REPEAT THE EMAIL ADDRESS*"/>-->
+<!--</form>-->
+<!--<br>-->
+<!--<br>-->
+<!--<form class="form1">-->
+<!--    <input type="password" class="password"  name="name" placeholder="PASSWORD*" />-->
+<!--</form>-->
+<!--<br>-->
+<!--<br>-->
+<!--<form class="form1">-->
+<!--    <input type="password" class="password" name="name"  placeholder="REPEAT THE PASSWORD* "/>-->
+<!--</form>-->
+<!--<br>-->
+
+<!--    <br>-->
+<!--    <div>-->
+<!--    <form action="http://webkod.pl/php/submit-result.php">-->
+<!--        <p>-->
+<!--            <label>-->
+<!--                <input type="checkbox" name="regulamin" value=" ">-->
+<!--            </label>-->
+<!--        </p>-->
+
+<!--        <p style="font-family:cursive"> accepts regulations </p>-->
+<!--    </div>-->
+<!--    </form>-->
+
+
+
+<!--<br>-->
+<!--<br>-->
+<!--    <a href="/" class="accountCreate2">CREATE AN ACCOUNT  </a>-->
     <br>
-    <div>
-    <form action="http://webkod.pl/php/submit-result.php">
-        <p>
-            <label>
-                <input type="checkbox" name="regulamin" value=" ">
-            </label>
-        </p>
 
-        <p style="font-family:cursive"> accepts regulations </p>
-    </div>
+    <form  name="register-form" onsubmit="return weryfikacja()" >
+        <input id="name" type="text"  placeholder="NAME" name="name" required>
+        <br>
+        <br>
+         <input type="text" placeholder="SURNAME" name="name">
+        <br>
+        <br>
+         <input type="text"  placeholder="E-MAILL ADRESS" name="name">
+        <br>
+        <br>
+
+         <input type="text" placeholder="REPEAT E-MAIL ADRESS" name="name">
+        <br>
+        <br>
+         <input id="pw" type="password" placeholder="PASSWORD" name="name" required>
+        <br>
+        <br>
+         <input type="password" placeholder="REPEAT PASSWORD" name="name">
+        <br>
+        <br>
+         <input type="number"placeholder="AGE" name="age" required>
+        <br>
+        <br>
+
+        <form action="http://webkod.pl/php/submit-result.php">
+            <p>
+                <label>
+                    <input type="checkbox" name="regulamin" value=" " required>
+                </label>
+            </p>
+
+            <p style="font-family:cursive"> accepts regulations </p>
+</div>
+            <input id="rgstr_btn" type="submit"   value="CREATE AN ACCOUNT" onClick="store()">
+<!--            "class="accountCreate2"-->
+</form>
     </form>
 
 
 
-<br>
-<br>
-    <a href="/" class="accountCreate2">CREATE AN ACCOUNT </a>
-    <br>
+
 
     <div class="requestAbout">
         <a href ="#"> Maybe you already have an account?</a>
@@ -312,7 +359,12 @@
     </div>
 </div>
 <br>
+
+
+
+<br>
 <footer>
+
     <div class="container">
         <div class="footerNav">
 
