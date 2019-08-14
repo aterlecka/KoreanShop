@@ -13,6 +13,7 @@
     <link rel="stylesheet/less" type="text/css" href="sale.less" />
     <script src="//cdnjs.cloudflare.com/ajax/l4ibs/less.js/3.9.0/less.min.js" ></script>
     <script src="../actives.js" data-poll="1000" data-relative-urls="false"></script>
+    <script src="../shoppingCart.js" data-poll="1000" data-relative-urls="false"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
@@ -45,10 +46,11 @@
 
     <div class="user">
 
-        <a class="sub" href="#"> SUBSCRIBE </a>
+        <a href="../file.html" class="sub"> SUBSCRIBE </a>
         <a href ="../sign.html" target="_self" rel="nofollow"> SIGN IN </a>
         <span>/</span>
         <a href="../registration.html" rel="nofollow"> SIGN UP</a>
+        <a href="../shoppingCart/shoppingCart.html" rel ="nofollow" >CART </a>
 
 
 
@@ -250,8 +252,13 @@
 
 
 </div>
+
+
+
 <p class="endSale"> The end of the sale will be:</p>
 <p id="demo"></p>
+
+
 
 <section class="products">
 
@@ -260,25 +267,31 @@
     <br>
     <div class="products2">
 
-        <div> <img class="mask"  src="../img/egggggg.png"/ >
+        <div> <img class="mask"  src="../img/egggggg.png"/>
            <p class="describe">BALM WITH EGGS</p>
            <p class="price"> <s>15.00$</s> </p>
             <p class ="price2">12.99 $</p>
+            <a href="#" data-name="Banana" data-price="12.99" class="add-to-cart btn btn-primary">Add to cart</a>
+            <input id="buy" type="submit" value="BUY IT" onClick="">
             <br>
             <br>
             <br>
         </div>
 
         <div> <img class="fluid"  src="../img/egg.png"/>
-            <p class="describe">BODY MUSS WITH EGGS</p>
+            <p class="describe">  BODY MUSS WITH EGGS    </p>
             <p class="price"><s>13.00$</s>
             <p class ="price2">11.55 $</p>
+            <a href="#" data-name="Orange" data-price="11.55" class="add-to-cart btn btn-primary">Add to cart</a>
+            <input id="buy" type="submit" value="BUY IT" onClick="">
         </div>
-
+<br>
         <div><img class="laneige" src="../img/3.png"/>
-            <p class="describe">MASK FOR NIGHT LANEIGE</p>
+            <p class="describe">   MASK FOR NIGHT    </p>
             <p class="price"><s> 21.50$</s> </p>
             <p class ="price2">17.99 $</p>
+            <a href="#" data-name="Orange" data-price="17.99" class="add-to-cart btn btn-primary">Add to cart</a>
+            <input id="buy" type="submit" width="10px" value="BUY IT" onClick="">
         </div>
 
         <div><img  class="aloe" src="../img/5.png"/>
@@ -341,6 +354,8 @@
 </section>
 
 
+
+
 <footer>
     <div class="container">
         <div class="footerNav">
@@ -352,20 +367,19 @@
                 <li>Job</li>
 
 
-
             </ul>
             <ul class="firstTwo">
-                <div class="second"> CUSTOMER SERVICE  </div>
+                <div class="second"> CUSTOMER SERVICE</div>
                 <li>Payment methods</li>
                 <li>Forms of delivery</li>
                 <li>Complains</li>
             </ul>
 
             <ul class="firstThree">
-                <div class="second"> MY ACCOUNT  </div>
-                <li><a href="../registration.html" target="_self" rel="nofollow" >Registration</a></li>
-                <li> <a href="../sign.html" target="_self" rel="nofollow" >Login </li>
-                <li><a href="#" >Contact </li>
+                <div class="second"> MY ACCOUNT</div>
+                <li><a href="../registration.html" target="_self" rel="nofollow">Registration</a></li>
+                <li><a href="../sign.html" target="_self" rel="nofollow">Login</a></li>
+                <li><a href="#">Contact</a></li>
 
             </ul>
         </div>

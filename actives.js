@@ -51,15 +51,18 @@ function weryfikacja() {
     var wiek = parseInt(document.forms['register-form']['age'].value);
 
     if (isNaN(wiek)) {
-        alert("Nie podales wieku!");
+        alert("Where is your age?!");
         return false;
     }
     if (wiek < 18) {
-        alert("Jestes nie pelnoletni");
+        alert("You are underage :( ");
         return false;
+    }
+    if ( wiek > 90 ){
+        alert ( "ERROR");
     } else {
         var imie = document.forms['form1']['name'].value;
-        alert("Witaj: " + name);
+        alert("Hello: " + name);
     }
 }
 
@@ -85,47 +88,6 @@ function logowanie() {
     }
 }
 
-//alert(document.getElementById("jeden").children[2].value);
-// function weryfikacja(){
-//     var age = parseInt( document.forms['form1']['age'].value );
-//
-//     if( isNaN(age) ){
-//         alert("You didn't enter the age!");
-//         return false;
-//     }
-//     if( age < 18 ){
-//         alert("You are underage :(");
-//         return false;
-//     }
-// if( age > 99){
-//     alert("error");
-// } else {
-//         var name = document.forms['form1']['name'].value;
-//         alert("Witaj: " + name);
-//     }
-// }
-// //
-// function logowanie(){
-//     var nickElem = document.forms['login']['nazwa'];
-//     var passElem = document.forms['login']['haslo'];
-//     if(nickElem.value.length < 3 ){
-//         nickElem.style.backgroundColor = "red";
-//
-//         setTimeout( function(){
-//             nickElem.style.backgroundColor = "white";
-//         }, 500); //500ms = 0.5s
-//
-//         return false;
-//     }
-//
-//     if(passElem.value.length < 6 ){
-//         passElem.style.backgroundColor = "red";
-//         setTimeout( function(){
-//             passElem.style.backgroundColor = "white";
-//         }, 500); //500ms = 0.5s
-//         return false;
-//     }
-// }
 
 function store() {
     var name = document.getElementById('name');
@@ -157,4 +119,5 @@ function check() {
         alert('ERROR.');
     }
 }
+
 
